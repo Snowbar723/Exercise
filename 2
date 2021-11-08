@@ -1,0 +1,18 @@
+//這個是我理解題意的意思，輸入多少，在輸出的時候就輸出多少
+//輸入100-->100台幣可轉換...
+//輸入1000-->1000台幣可轉換...
+
+#include <stdio.h>
+
+int main(void) {
+  int twd;
+	double usd;
+	for(int i=0;i<=1;i++){
+  printf("input(twd):");
+	scanf("%d",&twd);
+	usd=twd*0.036;
+	printf("%d台幣可轉換為%8.2f美金\n",twd,usd);
+	}
+}
+//如果題目是要一直保持在100，就把最後輸出換成下面這行就可以了
+printf("100台幣可轉換為%8.2f美金\n",usd);
